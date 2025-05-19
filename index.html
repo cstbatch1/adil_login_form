@@ -11,20 +11,25 @@
 
     <div class="login_container">
         <h1>Login Form</h1>
+        <!-- form start-->
+        <form id="login_form">
         <div>
-        <input type="number" placeholder="Enter your phone">
+             <input type="number" id="num" placeholder="Enter your phone" required>
         </div>
         <div>
-            <input type="password" placeholder="Enter your Password">
+            <input type="password" id="pass" placeholder="Enter your Password" required>
         </div>
-        <button id="loginBtn">Login</button>
+        <button id="loginBtn" type="submit"> Login</button>
+        </form>
+        <!-- form end -->
         <p>Forgotten password?</p>
 
         <p style="font-size: larger;">OR</p>
         <button>Create New Account</button>
+        <p id="error"></p>
     </div>
     
-
-
+<!-- js link -->
+<script src="script.js"></script>
 </body>
 </html>
